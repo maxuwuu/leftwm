@@ -1,0 +1,81 @@
+Config(
+  mod_key: ModKey::Alt,
+
+  keybind: Some([
+    Keybind("mod+Shift+w", "spawn vlc"),
+    Keybind("mod+Shift+s", "spawn shutter"),
+    Keybind("mod+Shift+d", "spawn thunar"),
+    Keybind("mod+Shift+x", "spawn ~/.config/i3/i3lock/lock"),
+    Keybind("mod+Shift+f", "spawn firefox"),
+    Keybind("mod+Return", "spawn xfce4-terminal"),
+    Keybind("mod+Shift+q", "close_window"),
+    Keybind("mod+d", "spawn rofi -show drun"),
+
+    Keybind("mod+Shift+t", "move_to_scratchpad"),
+    Keybind("mod+t", "show_scratchpad"),
+
+    Keybind("mod+j", "focus_left"),
+    Keybind("mod+k", "focus_down"),
+    Keybind("mod+l", "focus_up"),
+    Keybind("mod+g", "focus_right"),
+
+    Keybind("mod+Left", "focus_left"),
+    Keybind("mod+Down", "focus_down"),
+    Keybind("mod+Up", "focus_up"),
+    Keybind("mod+Right", "focus_right"),
+
+    Keybind("mod+Shift+j", "move_left"),
+    Keybind("mod+Shift+k", "move_down"),
+    Keybind("mod+Shift+l", "move_up"),
+    Keybind("mod+Shift+g", "move_right"),
+
+    Keybind("mod+Shift+Left", "move_left"),
+    Keybind("mod+Shift+Down", "move_down"),
+    Keybind("mod+Shift+Up", "move_up"),
+    Keybind("mod+Shift+Right", "move_right"),
+
+    Keybind("mod+h", "split_horizontal"),
+    Keybind("mod+v", "split_vertical"),
+
+    Keybind("mod+f", "toggle_focused_fullscreen"),
+
+    Keybind("mod+s", "layout_stacking"),
+    Keybind("mod+w", "layout_tabbed"),
+    Keybind("mod+e", "layout_toggle_split"),
+
+    Keybind("mod+Shift+space", "toggle_floating"),
+    Keybind("mod+space", "toggle_focus_mode"),
+    Keybind("mod+a", "focus_parent"),
+
+    Keybind("mod+1", "workspace 1"),
+    Keybind("mod+2", "workspace 2"),
+    Keybind("mod+3", "workspace 3"),
+    Keybind("mod+4", "workspace 4"),
+    Keybind("mod+5", "workspace 5"),
+    Keybind("mod+6", "workspace 6"),
+    Keybind("mod+7", "workspace 7"),
+    Keybind("mod+8", "workspace 8"),
+    Keybind("mod+9", "workspace 9"),
+    Keybind("mod+0", "workspace 10"),
+
+    Keybind("mod+Shift+1", "move_to_workspace 1"),
+    Keybind("mod+Shift+2", "move_to_workspace 2"),
+    Keybind("mod+Shift+3", "move_to_workspace 3"),
+    Keybind("mod+Shift+4", "move_to_workspace 4"),
+    Keybind("mod+Shift+5", "move_to_workspace 5"),
+    Keybind("mod+Shift+6", "move_to_workspace 6"),
+    Keybind("mod+Shift+7", "move_to_workspace 7"),
+    Keybind("mod+Shift+8", "move_to_workspace 8"),
+    Keybind("mod+Shift+9", "move_to_workspace 9"),
+    Keybind("mod+Shift+0", "move_to_workspace 10"),
+
+    Keybind("mod+Shift+c", "reload"),
+    Keybind("mod+Shift+r", "restart"),
+    Keybind("mod+Shift+z", "spawn ~/.config/i3/scripts/rofi-exit"),
+
+    Keybind("XF86AudioRaiseVolume", "spawn pactl set-sink-volume @DEFAULT_SINK@ +10%"),
+    Keybind("XF86AudioLowerVolume", "spawn pactl set-sink-volume @DEFAULT_SINK@ -10%"),
+    Keybind("XF86AudioMute", "spawn pactl set-sink-mute @DEFAULT_SINK@ toggle"),
+    Keybind("XF86AudioMicMute", "spawn pactl set-source-mute @DEFAULT_SOURCE@ toggle"),
+  ]),
+)
