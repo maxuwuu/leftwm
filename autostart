@@ -1,0 +1,9 @@
+#!/bin/bash
+
+nm-applet &
+xss-lock -- i3lock &
+picom &
+feh --bg-scale /path/to/your/wallpaper.jpg &
+~/.config/polybar/launch &
+xrandr --output Virtual1 --mode 1920x1080 &
+
